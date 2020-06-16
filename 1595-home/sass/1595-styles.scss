@@ -1,0 +1,41 @@
+$f-12:12px;
+$f-14:14px;
+$bg_color:#61ce70;
+$bg1_color:#7a7a7a;
+
+.type-1595{
+    hr{
+        width: 12%;
+        background-color: $bg_color;
+        height: 2px;
+  
+    }
+    a{
+        text-decoration: none !important;
+    }
+    .read-more{
+        font-size: $f-12;
+        background-color: $bg_color;
+        color: white;
+        i{
+            font-size: $f-14;
+        }
+    }
+    .choose-us{
+        i{
+            color:$bg_color;
+        }
+    }
+    .Experience {
+        color: $bg1_color;
+        .progress {
+            height: 11px;
+            color: $bg_color;
+        }
+    }
+    p{
+        color: $bg1_color;
+    }
+  
+    
+}

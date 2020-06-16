@@ -1,0 +1,43 @@
+$f-12:12px;
+$f-14:14px;
+$f-18:18px;
+$bg_color:#23a455;
+$bg1_color:#7a7a7a;
+
+.type-1749{
+    hr{
+        width: 12%;
+        background-color: $bg_color;
+        height: 2px;
+    }
+    a{
+        text-decoration: none !important;
+    }
+    .online{
+        font-size: 20px;
+        background-color: $bg_color;
+        color:white;
+        i{
+            font-size: $f-14;
+        }
+    }
+    .fas{
+        i{
+            color: $bg_color;
+            font-size: 20px;
+        }
+    }
+    fas{
+        i{
+            color: $bg_color;
+            font-size: 20px;
+        }
+    }
+    .we{
+        h4{
+            color:$bg_color;
+        }
+    }
+  
+    
+}

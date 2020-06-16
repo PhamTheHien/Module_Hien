@@ -1,0 +1,88 @@
+$color_text: #6ad078;
+$color_hover: #23a455;
+%width_div {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+$transition_opac: all .5s ease;
+.type-1734 {
+    .separation {
+        width: 145px;
+        height: 2px;
+        background-color: $color_text;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+        .content-infor {
+            a {
+                color: #fff !important;
+                text-decoration: none;
+                i {
+                    color: white;
+                }
+            }
+            .infor-link {
+                position: absolute;
+                z-index: 3;
+                opacity: 0;
+                @extend %width_div;
+                transition: $transition_opac;
+                .hyperlink_website {
+                    border: 2px solid white;
+                    border-radius: 50%;
+                    padding: 10px 14px;
+                    transition: all .2s ease;
+                    &:hover {
+                        background-color: white;
+                        i {
+                            color: $color_text;
+                        }
+                    }
+                }
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                background-color: #000;
+                @extend %width_div;
+                z-index: 0;
+                opacity: 0;
+                transition: $transition_opac;
+            }
+            &:hover {
+                &::after {
+                    transition: $transition_opac;
+                    opacity: 0.5;
+                }
+                .infor-link {
+                    transition: $transition_opac;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        .grid-container {
+            display: block;
+        }
+    }
+    .hyperlink {
+        a {
+            transition: $transition_opac;
+            text-decoration: none !important;
+            color: white;
+            background-color: $color_text;
+            &:hover {
+                background-color: $color_hover;
+            }
+        }
+    }
+}

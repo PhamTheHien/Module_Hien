@@ -1,0 +1,58 @@
+.type-1734 .grid-item .content-infor .infor-link, .type-1734 .grid-item .content-infor::after {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+.type-1734 .separation {
+  width: 145px;
+  height: 2px;
+  background-color: #6ad078; }
+.type-1734 .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto; }
+.type-1734 .grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px; }
+  .type-1734 .grid-item .content-infor a {
+    color: #fff !important;
+    text-decoration: none; }
+    .type-1734 .grid-item .content-infor a i {
+      color: white; }
+  .type-1734 .grid-item .content-infor .infor-link {
+    position: absolute;
+    z-index: 3;
+    opacity: 0;
+    transition: all 0.5s ease; }
+    .type-1734 .grid-item .content-infor .infor-link .hyperlink_website {
+      border: 2px solid white;
+      border-radius: 50%;
+      padding: 10px 14px;
+      transition: all 0.2s ease; }
+      .type-1734 .grid-item .content-infor .infor-link .hyperlink_website:hover {
+        background-color: white; }
+        .type-1734 .grid-item .content-infor .infor-link .hyperlink_website:hover i {
+          color: #6ad078; }
+  .type-1734 .grid-item .content-infor::after {
+    content: "";
+    position: absolute;
+    background-color: #000;
+    z-index: 0;
+    opacity: 0;
+    transition: all 0.5s ease; }
+    .type-1734 .grid-item .content-infor:hover::after {
+      transition: all 0.5s ease;
+      opacity: 0.5; }
+    .type-1734 .grid-item .content-infor:hover .infor-link {
+      transition: all 0.5s ease;
+      opacity: 1; }
+@media only screen and (max-width: 768px) {
+  .type-1734 .grid-container {
+    display: block; } }
+.type-1734 .hyperlink a {
+  transition: all 0.5s ease;
+  text-decoration: none !important;
+  color: white;
+  background-color: #6ad078; }
+  .type-1734 .hyperlink a:hover {
+    background-color: #23a455; }

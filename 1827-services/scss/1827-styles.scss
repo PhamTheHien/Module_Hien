@@ -1,0 +1,40 @@
+$f-12:12px;
+$f-14:14px;
+$bg_color:#23a455;
+$bg1_color:#7a7a7a;
+
+.type-1827{
+    // hr{
+    //     width: 12%;
+    //     background-color: $bg_color;
+    //     height: 2px;
+    //     float: left;
+    // }
+    .more{
+        h3::before{
+            position: absolute;
+            content: "";
+            background-color: #23a455;
+            width: 120px;
+            bottom: -19px;
+            border-bottom: 2px solid #23a455;
+        }
+    }
+    a{
+        text-decoration: none !important;
+    }
+    .read-more{
+        font-size: $f-12;
+        background-color: $bg_color;
+        color: white;
+        margin:7px;
+        i{
+            font-size: $f-14;
+        }
+    }
+    p{
+        color: $bg1_color;
+    }
+   
+    
+}

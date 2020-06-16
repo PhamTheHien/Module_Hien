@@ -1,0 +1,14 @@
+.type-1804 .more h3::before {
+  content: "";
+  background-color: #23a455;
+  width: 12%;
+  height: 2px; }
+.type-1804 a {
+  text-decoration: none !important; }
+.type-1804 .read-more {
+  font-size: 12px;
+  background-color: #23a455;
+  color: white;
+  margin: 7px; }
+  .type-1804 .read-more i {
+    font-size: 14px; }
